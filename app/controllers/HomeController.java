@@ -117,6 +117,11 @@ public class HomeController extends Controller {
         Form<User> addUserForm = formFactory.form(User.class).bindFromRequest();
         User u = addUserForm.get();
 
+	Form<Customer> addCustForm = formFactory.form(Customer.class).bindFromRequest();
+	Customer c = addCustForm.get();
+
+	
+
         if(addUserForm.hasErrors()){
             flash("fail", "User" + u.getEmail() + "is already in our database.");
             return redirect(controllers.routes.LoginController.login(cat, filter));
@@ -165,4 +170,5 @@ public class HomeController extends Controller {
 
     }
 
+	
 }

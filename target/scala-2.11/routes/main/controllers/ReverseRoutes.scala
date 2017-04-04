@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/Desktop/FINALFIX/dsad/conf/routes
-// @DATE:Tue Apr 04 15:09:49 IST 2017
+// @SOURCE:/home/wdd/Desktop/project/04-04-17/conf/routes
+// @DATE:Tue Apr 04 16:35:40 IST 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }

@@ -397,8 +397,8 @@ Seq[Any](format.raw/*1.91*/("""
 object productDetails extends productDetails_Scope0.productDetails
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 04 15:04:01 IST 2017
-                  SOURCE: /home/wdd/Desktop/FINALFIX/dsad/app/views/productDetails.scala.html
+                  DATE: Tue Apr 04 16:35:40 IST 2017
+                  SOURCE: /home/wdd/Desktop/project/04-04-17/app/views/productDetails.scala.html
                   HASH: 2ebb44416dd95c55e01e33a13d78d07ec73ff33d
                   MATRIX: 808->1|992->90|1019->92|1083->148|1122->150|1153->155|15248->14219
                   LINES: 27->1|32->1|33->2|33->2|33->2|34->3|378->347

@@ -24,6 +24,12 @@ import javax.inject.Inject;
 @With(CheckIfCustomer.class)
 public class CustomerCtrl extends Controller {
 
+private User getUserFromSession() {
+        return User.getUserById(session().get("email"));
+    }
+
+private FormFactory formFactory;
+
     List<Category> categoriesList = Category.findAll();
 
     public Result profile(Long cat, String filter) {
@@ -53,7 +59,8 @@ public class CustomerCtrl extends Controller {
     }
 
     public Result payment(Long cat, String filter) {
-        return ok(payment.render(getCurrentUser(), User.getUserById(session().get("email")), categoriesList, cat, filter));
+	return ok(payment.render(getCurrentUser(), User.getUserById(session().get("email")), categoriesList, cat, filter));
+	
     }
 
 
