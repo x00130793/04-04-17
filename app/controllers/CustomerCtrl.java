@@ -59,8 +59,9 @@ private FormFactory formFactory;
     }
 
     public Result payment(Long cat, String filter) {
-	return ok(payment.render(getCurrentUser(), User.getUserById(session().get("email")), categoriesList, cat, filter));
-	
+        Form<Customer> addCustForm = formFactory.form(Customer.class).bindFromRequest();
+	    Customer c = addCustForm.get();
+        return ok(payment.render(getCurrentUser(), User.getUserById(session().get("email")), categoriesList, addCustForm, cat, filter));
     }
 
 
